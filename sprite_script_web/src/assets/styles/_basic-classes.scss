@@ -1,0 +1,174 @@
+
+@mixin flex-start {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-row {
+    @include flex-start;
+
+    /** Класс для расположения элементов внутри flex-row по краям */
+    &.between {
+        justify-content: space-between;
+    }
+    &.flex-end {
+        justify-content: flex-end;
+    }
+    &.center {
+        justify-content: center;
+    }
+
+    /** Класс для выравнивания элементов внутри flex-row по вертикали по центру */
+    &.middle {
+        align-items: center;
+    }
+
+    &.ai-start {
+        align-items: flex-start;
+    }
+
+    &.justify-end {
+        justify-content: flex-end;
+    }
+}
+
+/** Класс для добавления линии-разделителя под строкой flex-row */
+.with-border-bottom {
+    &:not(:last-child) {
+        padding-bottom: $indent-x3;
+        border-bottom: solid 1px $dark-solid-15;
+    }
+    &.pb-x1 {
+        @extend .pb-x1;
+    }
+    &.pb-x2 {
+        @extend .pb-x2;
+    }
+    &.pb-x3 {
+        @extend .pb-x3;
+    }
+    &.pb-x4 {
+        @extend .pb-x4;
+    }
+}
+
+.flex-column {
+    @include flex-start;
+    flex-direction: column;
+
+    /** Класс для расположения элементов внутри flex-column по верхнему и нижнему краям */
+    &.between {
+        justify-content: space-between;
+    }
+
+    /** Класс для выравнивания элементов внутри flex-row по горизонтали по центру */
+    &.middle {
+        align-items: center;
+    }
+}
+
+.flex-center {
+    @include flex-center;
+}
+
+/** Класс для расположения иконок в строку */
+.icons-block {
+    @include flex-start;
+
+    div, button, img, span, p {
+        &:not(:last-child) {
+            margin-right: $indent-x2;
+        }
+    }
+
+    &.middle {
+        align-items: center;
+    }
+
+    &.margin-x1 {
+        div, button, img, span, p {
+            &:not(:last-child) {
+                margin-right: $indent-x1;
+            }
+        }
+    }
+
+    &.margin-x3 {
+        div, button, img, span, p {
+            &:not(:last-child) {
+                margin-right: $indent-x3;
+            }
+        }
+    }
+}
+
+/** Выравнивание элемента по правому краю */
+.align-right {
+    margin-left: auto;
+}
+
+// width
+.w-100 {
+    width: 100%;
+}
+
+// padding:
+//  pt = p-top
+//  pr = p-right
+//  pb = p-bottom
+//  pl = p-left
+
+@for $i from 1 through $indent-x-limit {
+    .pt-x#{$i} {
+        padding-top: $i * $indent;
+    }
+}
+@for $i from 1 through $indent-x-limit {
+    .pr-x#{$i} {
+        padding-right: $i * $indent;
+    }
+}
+@for $i from 1 through $indent-x-limit {
+    .pb-x#{$i} {
+        padding-bottom: $i * $indent;
+    }
+}
+@for $i from 1 through $indent-x-limit {
+    .pl-x#{$i} {
+        padding-left: $i * $indent;
+    }
+}
+
+// margin:
+//  mt = m-top
+//  mr = m-right
+//  mb = m-bottom
+//  ml = m-left
+
+@for $i from 1 through $indent-x-limit {
+    .mt-x#{$i} {
+        margin-top: $i * $indent;
+    }
+}
+@for $i from 1 through $indent-x-limit {
+    .mr-x#{$i} {
+        margin-right: $i * $indent;
+    }
+}
+@for $i from 1 through $indent-x-limit {
+    .mb-x#{$i} {
+        margin-bottom: $i * $indent;
+    }
+}
+@for $i from 1 through $indent-x-limit {
+    .ml-x#{$i} {
+        margin-left: $i * $indent;
+    }
+}

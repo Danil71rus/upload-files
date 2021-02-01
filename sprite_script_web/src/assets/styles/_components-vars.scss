@@ -1,0 +1,75 @@
+// itl-button
+
+  $btn-min-width: 104px;
+  $btn-max-width: 240px;
+  $btn-height: 40px;
+
+// itl-input
+
+  $input-min-width: 72px;
+  $input-width: 296px;
+  $input-height: 40px;
+
+// itl-combobox
+
+  $combobox-width: 296px;
+  $combobox-width-long: 240px;
+  $combobox-width-short: 112px;
+  $combobox-width-tiny: 72px;
+
+// itl-tabs
+
+  $primary-tabs-height: 64px;
+  $secondary-tabs-min-width: 40px;
+  $secondary-tabs-height: 40px;
+
+// itl-dialog
+
+  $popup-min-width: 480px;
+  $popup-padding: 32px;
+  $popup-close-area: 40px;
+  $popup-medium-width: 620px;
+
+// default layout vars
+
+  $aside-width: 88px;
+  $aside-item-height: 64px;
+  $aside-width-xl: 176px;
+  $aside-item-height-xl: 64px;
+  $aside-logo-height-xl: 80px;
+  $breakpoint-xl: 1600px;
+  $breakpoint-xl-transition: 300ms;
+  $header-height: 64px;
+  $avatar-size: 32px;
+  $logout-size: 48px;
+  $avatar-big-size: 96px;
+  $horizontal-menu-height: 64px;
+  $content-padding: 16px;
+  $body-min-width: 1200px;
+  $content-min-width: $body-min-width - $aside-width;
+  $inner-page-max-width: 1200px;
+  $inner-page-min-width: 1080px;
+
+// the main multiplier of the design system
+
+  $indent: 8px;
+  $indent-x-limit: 6;
+
+  $indent-x1: $indent;     // = 8px
+  $indent-x2: $indent * 2; // = 16px
+  $indent-x3: $indent * 3; // = 24px
+  $indent-x4: $indent * 4; // = 32px
+  $indent-x5: $indent * 5; // = 40px
+  $indent-x6: $indent * 6; // = 48px
+
+// animations
+
+  $slow-transition:   300ms ease-in-out;
+  $basic-transition:  200ms ease-in-out;
+  $fast-transition:   100ms ease-in-out;
+
+// default min-height
+
+  $default-min-height-sm: 288px;
+  $default-min-height: 296px;
+  $default-min-height-lg: 376px;

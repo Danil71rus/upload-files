@@ -1,0 +1,84 @@
+// colors
+
+$primary:           #00B956;    // Основной зеленый
+$primary-hover:     #00EE6F;    // Ховер эффект вспомогательных элементов
+$primary-push:      #404d46;    // Нажатие вспомогательных элементов
+
+$secondary:         #731982;    // Стандартный фиолетовый цвет
+$secondary-hover:   #980cab;    // Ховер эффект
+$secondary-push:    #62096e;    // Нажатие кнопки
+
+$critical:          #dc0919;    // Цвет критической кнопки
+$critical-hover:    #f62434;    // Ховер эффект
+$critical-push:     #ab0714;    // Нажатие критической кнопки
+
+$events-error:      #f62434;    // Ошибки
+$events-correct:    #5ae95e;    // Оповещения
+$events-warning:    #ffa717;    // Предупреждения
+
+$calls-outgoing:    #5786df;    // Исходящие звонки
+$calls-incoming:    #65d868;    // Входящие звонки
+$calls-missed:      #ff4865;    // Пропущенные звонки
+
+$dark-solid-5:      #f2f2f2;
+$dark-solid-10:     #E5E5E5;    // 10% чёрный. Для фона интерфейсов и элементов
+$dark-solid-15:     #d9d9d9;    // 15% чёрный. Для разделителей и некоторых элементов
+$dark-solid-30:     #b2b2b2;    // 30% чёрный. Для вспомогательного текста
+$dark-solid-80:     #333333;    // 80% чёрный. Основной цвет текста
+$dark-solid-100:    #000000;    // 100% чёрный. Используется для теней от карточек
+
+$white:             #ffffff;
+
+$star-five:         #fcf2bf;    // Цвет оценки 5 звезд
+$star-four:         #fadd8e;    // Цвет оценки 4 звезды
+$star-three:        #f8c25e;    // Цвет оценки 3 звезды
+$star-two:          #f69e2b;    // Цвет оценки 2 звезды
+$star-one:          #f6902b;    // Цвет оценки 1 звезда
+
+$background-color:  #f0f0f0;    // Цвет фона
+
+/**
+*   Экспорт переменных для использования в ts при помощи геттера
+*   get colors() {
+*       return require(`@a/skins/${process.env.VUE_APP_SKIN}/styles/_theme-vars.scss`)
+*   }
+*   Пример использования: this.colors.callsMissed
+*/
+:export {
+    primary:         $primary;
+    primaryHover:    $primary-hover;
+    primaryPush:     $primary-push;
+
+    secondary:       $secondary;
+    secondaryHover:  $secondary-hover;
+    secondaryPush:   $secondary-push;
+
+    critical:        $critical;
+    criticalHover:   $critical-hover;
+    criticalPush:    $critical-push;
+
+    eventsError:     $events-error;
+    eventsCorrect:   $events-correct;
+    eventsWarning:   $events-warning;
+
+    callsOutgoing:   $calls-outgoing;
+    callsIncoming:   $calls-incoming;
+    callsMissed:     $calls-missed;
+
+    darkSolid5:      $dark-solid-5;
+    darkSolid10:     $dark-solid-10;
+    darkSolid15:     $dark-solid-15;
+    darkSolid30:     $dark-solid-30;
+    darkSolid80:     $dark-solid-80;
+    darkSolid100:    $dark-solid-100;
+
+    white:           $white;
+
+    starFive:        $star-five;
+    starFour:        $star-four;
+    starThree:       $star-three;
+    starTwo:         $star-two;
+    starOne:         $star-one;
+
+    backgroundColor: $background-color
+}
